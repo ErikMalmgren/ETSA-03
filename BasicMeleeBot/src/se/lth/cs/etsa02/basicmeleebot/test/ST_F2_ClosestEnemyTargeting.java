@@ -188,7 +188,7 @@ public class ST_F2_ClosestEnemyTargeting extends RobotTestBed {
 		double xDuck1 = duck1.getX();
 		double yDuck1 = duck1.getY();
 		
-		IRobotSnapshot duck2 = event.getTurnSnapshot().getRobots()[1];
+		IRobotSnapshot duck2 = event.getTurnSnapshot().getRobots()[2];
 		double xDuck2 = duck2.getX();
 		double yDuck2 = duck2.getY();
 		
@@ -211,7 +211,7 @@ public class ST_F2_ClosestEnemyTargeting extends RobotTestBed {
 				}
 			}
 		}
-		if(bmb.getGunHeat() - heat > 1.2) {
+		if(bmb.getGunHeat() - heat == 1.2) {
 			flg = true;
 		}
 		
