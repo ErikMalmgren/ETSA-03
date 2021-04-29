@@ -84,6 +84,7 @@ public class BasicMeleeBot extends TeamRobot {
 	@Override
 	public void onRobotDeath(RobotDeathEvent e) {
 		enemyTracker.removeEnemy(e.getName());
+		onRobotDeath(e);
 	}
 	
 	/**
